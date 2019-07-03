@@ -44,7 +44,7 @@ class Access:
 
     def put(self, end_url, payload=None):
         '''
-        Send post request and return results
+        Send put request and return results
         '''
         url = urljoin(self.base_url, end_url)
         data = json.dumps(payload) if payload is not None else None
